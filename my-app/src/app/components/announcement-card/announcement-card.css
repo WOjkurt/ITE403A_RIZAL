@@ -1,0 +1,31 @@
+/* Flag 10: Client styling for announcement card */
+.announcement-card {
+  border-radius: 12px;           /* Rounded corners */
+  border: 2px solid #2b6cb0;     /* Blue border */
+  padding: 1.25rem;              /* Padding */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  background-color: #ffffff;
+  max-width: 500px;
+  margin: 1rem auto;
+}
+
+.card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #2b6cb0;
+  font-weight: 700;
+}
+
+.card-description {
+  margin: 0 0 0.75rem 0;
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card-date {
+  font-size: 0.8rem;
+  color: #718096;
+  font-weight: 500;
+  display: block;
+}

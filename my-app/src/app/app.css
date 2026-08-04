@@ -1,193 +1,23 @@
-/* ========================================
-   ID Card — Oak Brown & Forest Green
-   Matching reference layout
-   ======================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
 :host {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100dvh;
-  font-family: 'Inter', Arial, sans-serif;
-  background-color: #e8e0d8;
+  display: block;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f5f7fa;
   margin: 0;
 }
 
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 2rem;
-}
-
-/* ---- Card Container ---- */
-.id-card {
-  display: flex;
-  flex-direction: row;
-  width: 600px;
-  height: 260px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* ---- Green Accent Band (far left) ---- */
-.accent-band {
-  width: 18px;
-  min-height: 100%;
-  background-color: #2d5a3d;
-  flex-shrink: 0;
-}
-
-/* ---- Photo Section ---- */
-.photo-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem 1.25rem;
-  gap: 0.75rem;
-  flex-shrink: 0;
-}
-
-.profile-picture {
-  width: 120px;
-  height: 140px;
-  border: 2px solid #5a3825;
-  background-color: #f5f0eb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.profile-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.signature-label {
-  font-size: 0.6rem;
-  color: #5a3825;
-  text-align: center;
-  border-top: 1px solid #5a3825;
-  padding-top: 0.3rem;
-  width: 110px;
-  letter-spacing: 0.02em;
-}
-
-/* ---- Credentials Section ---- */
-.credentials-section {
-  flex: 1;
-  padding: 1.25rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-/* Header */
-.credentials-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.75rem;
-  border-bottom: 2px solid #2d5a3d;
-  padding-bottom: 0.6rem;
-}
-
-.id-card-title {
+body {
   margin: 0;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #2d5a3d;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
 }
 
-/* Body */
-.credentials-body {
+.dashboard-body {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.announcements-section {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  flex: 1;
-}
-
-.name-block {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-}
-
-.person-name {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #3b2314;
-}
-
-.person-position {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #5a3825;
-}
-
-.info-rows {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.info-row {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.78rem;
-}
-
-.info-label {
-  font-weight: 600;
-  color: #5a3825;
-  min-width: 60px;
-}
-
-.info-separator {
-  color: #5a3825;
-}
-
-.info-value {
-  color: #333333;
-  font-weight: 400;
-}
-
-/* ---- GitHub Link (bottom-right, replacing QR) ---- */
-.github-link {
-  position: absolute;
-  bottom: 1.25rem;
-  right: 1.5rem;
-}
-
-.github-link a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border: 2px solid #2d5a3d;
-  border-radius: 6px;
-  padding: 6px;
-  color: #2d5a3d;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.github-link a:hover {
-  background-color: #2d5a3d;
-  color: #ffffff;
-}
-
-.github-link svg {
-  width: 100%;
-  height: 100%;
+  gap: 1rem;
 }

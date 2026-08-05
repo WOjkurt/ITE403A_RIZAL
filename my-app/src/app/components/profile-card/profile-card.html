@@ -4,7 +4,7 @@
 
     <div class="photo-section">
       <div class="profile-picture">
-        <img src="image.png" alt="Kurt Wojtyle S. Rizal" class="profile-img" />
+        <img src="image.png" class="profile-img" />
       </div>
       <span class="signature-label">Authorize Signature</span>
     </div>
@@ -16,25 +16,44 @@
 
       <div class="credentials-body">
         <div class="name-block">
-          <span class="person-name">Kurt Wojtyle Rizal</span>
-          <span class="person-position">BSIT - IV</span>
+          <span class="person-name">{{StudentName}}</span>
         </div>
 
         <div class="info-rows">
           <div class="info-row">
             <span class="info-label">ID No</span>
             <span class="info-separator">:</span>
-            <span class="info-value">2026-0729</span>
+            <span class="info-value">{{StudentID}}</span>
           </div>
           <div class="info-row">
             <span class="info-label">Course</span>
             <span class="info-separator">:</span>
-            <span class="info-value">BSIT - IV</span>
+            <span class="info-value">{{Course}} - {{Year}}</span>
           </div>
           <div class="info-row">
             <span class="info-label">Date</span>
             <span class="info-separator">:</span>
             <span class="info-value">July 29, 2026</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Section</span>
+            <span class="info-separator">:</span>
+            <span class="info-value">{{Section}}</span>
+          </div>
+           <div class="info-row">
+            <span class="info-label">Nickname</span>
+            <span class="info-separator">:</span>
+            <span class="info-value">{{Nickname | uppercase}}</span>
+          </div>
+               <div class="info-row">
+            <span class="info-label">Email</span>
+            <span class="info-separator">:</span>
+            <span class="info-value">{{Email}}</span>
+          </div>
+               <div class="info-row">
+            <span class="info-label">Grade</span>
+            <span class="info-separator">:</span>
+            <span class="info-value">{{Grade > 3.0 ? 'Fail': 'Pass'}}</span>
           </div>
         </div>
       </div>

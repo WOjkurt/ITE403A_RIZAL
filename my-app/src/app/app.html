@@ -4,8 +4,18 @@
   <app-profile-card></app-profile-card>
 
   <section class="announcements-section">
-    <app-announcement-card></app-announcement-card>
+    @for (announcement of announcements; track announcement.title) {
+      <app-announcement-card [announcement]="announcement"></app-announcement-card>
+    }
   </section>
+
+ <section class="students-section">
+  <h2>Student List</h2>
+  <div class="student-card" *ngFor="let student of students; let i = index">
+    <h3 class="student-name">#{{ i + 1 }} {{ student.name }}</h3>
+    <p class="student-info">{{ student.course }} • {{ student.year }}</p>
+  </div>
+</section>
 </main>
 
 <app-footer></app-footer>

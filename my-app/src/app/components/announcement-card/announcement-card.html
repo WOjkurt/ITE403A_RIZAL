@@ -1,60 +1,10 @@
 <div class="announcement-card">
-  <h3 class="card-title">Welcome {{AnnouncementTitle1}}</h3>
-  <p class="card-description">{{AnnouncementBody1}}</p>
-  <span class="card-date">August 4, 2026</span>
+  <div class="card-header">
+    <span class="card-author">Posted by: {{ announcement?.author }}</span>
+    <span class="card-date">{{ announcement?.date | date:'MMMM d, y' }}</span>
+  </div>
+  <div class="card-body">
+    <h3 class="card-title">{{ announcement?.title }}</h3>
+    <p class="card-description">{{ announcement?.body }}</p>
+  </div>
 </div>
-
-<div class="announcement-card">
-  <h3 class="card-title">Welcome {{AnnouncementTitle2}}</h3>
-  <p class="card-description">{{AnnouncementBody2}}</p>
-  <span class="card-date">August 4, 2026</span>
-</div>
-
-<div class="announcement-card">
-  <h3 class="card-title">Welcome {{AnnouncementTitle3}}</h3>
-  <p class="card-description">{{AnnouncementBody3}}</p>
-  <span class="card-date">August 4, 2026</span>
-</div>
-<div class="announcement-card">
-  <h3 class="card-title">Welcome {{AnnouncementTitle4}}</h3>
-  <p class="card-description">{{AnnouncementBody4}}</p>
-  <span class="card-date">August 4, 2026</span>
-</div>
-
-<div class="announcement-card">
-  <h3 class="card-title">Welcome {{AnnouncementTitle5}}</h3>
-  <p class="card-description">{{AnnouncementBody5}}</p>
-  <span class="card-date">August 4, 2026</span>
-</div>
-
-<div class="announcement-card">
-  <h3 class="card-title">Welcome {{AnnouncementTitle6}}</h3>
-  <p class="card-description">{{AnnouncementBody6}}</p>
-  <span class="card-date">August 4, 2026</span>
-</div>
-
-<div class="announcement-card">
-  <h3 class="card-title">Welcome {{AnnouncementTitle7}}</h3>
-  <p class="card-description">{{AnnouncementBody7}}</p>
-  <span class="card-date">August 4, 2026</span>
-</div>
-
-<div class="announcement-card">
-  <h3 class="card-title">Welcome {{AnnouncementTitle8}}</h3>
-  <p class="card-description">{{AnnouncementBody8}}</p>
-  <span class="card-date">August 4, 2026</span>
-</div>
-
-<div class="announcement-card">
-  <h3 class="card-title">Welcome {{AnnouncementTitle9}}</h3>
-  <p class="card-description">{{AnnouncementBody9}}</p>
-  <span class="card-date">August 4, 2026</span>
-</div>
-
-<div class="announcement-card">
-  <h3 class="card-title">Welcome {{AnnouncementTitle10}}</h3>
-  <p class="card-description">{{AnnouncementBody10}}</p>
-  <span class="card-date">August 4, 2026</span>
-</div>
-
-

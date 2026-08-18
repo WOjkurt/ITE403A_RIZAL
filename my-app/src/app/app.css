@@ -22,7 +22,6 @@ body {
   gap: 1rem;
 }
 
-/* Student Directory Section */
 .students-section {
   margin-top: 2.5rem;
 }
@@ -34,6 +33,56 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Announcement Cards */
+.announcement-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #2b6cb0;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.announcement-card.pinned {
+  border-left-color: #3182ce;
+  background-color: #ebf8ff;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.card-author {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.card-date {
+  font-size: 0.8rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #2b6cb0;
+  font-weight: 700;
+}
+
+.card-description {
+  margin: 0;
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Student Cards */
 .student-card {
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
@@ -42,6 +91,12 @@ body {
   padding: 1rem 1.25rem;
   margin-bottom: 0.75rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.student-card.highlighted {
+  border-left-color: #d69e2e;
+  background-color: #fffaf0;
 }
 
 .student-name {
@@ -56,4 +111,49 @@ body {
   font-size: 0.9rem;
   color: #718096;
   font-weight: 500;
+}
+
+/* Actions & Buttons */
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.card-actions button {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: #4a5568;
+  background-color: #edf2f7;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.card-actions button:hover {
+  background-color: #e2e8f0;
+  border-color: #cbd5e0;
+  color: #2d3748;
+}
+
+.card-actions button.favorited {
+  background-color: #f6e05e;
+  border-color: #d69e2e;
+  color: #744210;
+}
+
+.card-actions button.favorited:hover {
+  background-color: #ecc94b;
+}
+
+.card-actions button.pinned-btn {
+  background-color: #3182ce;
+  color: #ffffff;
+  border-color: #2b6cb0;
+}
+
+.card-actions button.pinned-btn:hover {
+  background-color: #2b6cb0;
 }

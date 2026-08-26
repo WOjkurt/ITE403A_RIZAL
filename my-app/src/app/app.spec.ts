@@ -4,7 +4,7 @@ import { App } from './app';
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App],
+      imports: [App], // Standalone component import
     }).compileComponents();
   });
 
@@ -14,10 +14,12 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', async () => {
+  it('should render the Student List section header', async () => {
     const fixture = TestBed.createComponent(App);
+    fixture.detectChanges(); // Trigger change detection to render template
     await fixture.whenStable();
+
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, my-app');
+    expect(compiled.querySelector('.students-section h2')?.textContent).toContain('Student List');
   });
 });

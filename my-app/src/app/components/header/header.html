@@ -1,3 +1,11 @@
-<header class="header">
-  <h2>Don Bosco Student Portal</h2>
+<header class="app-header">
+  <h1>Don Bosco Student Portal</h1>
+  <nav class="nav-links">
+    <a routerLink="/students" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      Student List
+    </a>
+    <a routerLink="/students/add" routerLinkActive="active">
+      + Add Student
+    </a>
+  </nav>
 </header>

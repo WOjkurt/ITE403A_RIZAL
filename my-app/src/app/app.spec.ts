@@ -4,7 +4,7 @@ import { App } from './app';
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App], // Standalone component import
+      imports: [App],
     }).compileComponents();
   });
 
@@ -16,7 +16,7 @@ describe('App', () => {
 
   it('should render the Student List section header', async () => {
     const fixture = TestBed.createComponent(App);
-    fixture.detectChanges(); // Trigger change detection to render template
+    fixture.detectChanges();
     await fixture.whenStable();
 
     const compiled = fixture.nativeElement as HTMLElement;

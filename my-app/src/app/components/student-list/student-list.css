@@ -1,0 +1,176 @@
+.students-section {
+    margin-top: 2.5rem;
+}
+
+.students-section h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+
+.student-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #2b6cb0;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+.student-card.highlighted {
+    border-left-color: #d69e2e;
+    background-color: #fffaf0;
+}
+
+.student-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 0.25rem 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.student-info {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #718096;
+    font-weight: 500;
+}
+
+.active-badge {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2b6cb0;
+}
+
+.inactive-badge {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #718096;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: 1px dashed #cbd5e0;
+    border-radius: 8px;
+    color: #718096;
+    font-weight: 500;
+}
+
+.card-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.card-actions button {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.825rem;
+    font-weight: 600;
+    color: #4a5568;
+    background-color: #edf2f7;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.card-actions button:hover {
+    background-color: #e2e8f0;
+    border-color: #cbd5e0;
+    color: #2d3748;
+}
+
+.card-actions button.favorited {
+    background-color: #f6e05e;
+    border-color: #d69e2e;
+    color: #744210;
+}
+
+.card-actions button.favorited:hover {
+    background-color: #ecc94b;
+}
+
+.btn-view {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.btn-view:hover {
+    background-color: #1d4ed8;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.btn-add {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #16a34a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-add:hover {
+    background-color: #15803d;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.btn-add {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #16a34a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-add:hover {
+    background-color: #15803d;
+}
+
+.btn-view {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.btn-view:hover {
+    background-color: #1d4ed8;
+}

@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { Header } from './components/header/header';
 import { Footer } from './components/footer/footer';
 import { ProfileCard } from './components/profile-card/profile-card';
-import { AnnouncementCard } from './components/announcement-card/announcement-card';
 
 @Component({
   selector: 'app-root',
@@ -14,8 +13,7 @@ import { AnnouncementCard } from './components/announcement-card/announcement-ca
     RouterOutlet,
     Header,
     Footer,
-    ProfileCard,
-    AnnouncementCard
+    ProfileCard
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
@@ -23,11 +21,9 @@ import { AnnouncementCard } from './components/announcement-card/announcement-ca
 export class App implements OnInit {
   protected readonly title = signal('my-app');
 
-
   isLoading = signal(true);
 
   ngOnInit(): void {
-
     setTimeout(() => {
       this.isLoading.set(false);
     }, 1000);
@@ -63,34 +59,5 @@ export class App implements OnInit {
 
   onDeleteAnnouncement(index: number): void {
     this.announcements.splice(index, 1);
-  }
-
-  editingStudent: string | null = null;
-
-  onEditStudent(student: any): void {
-    this.editingStudent = student.name;
-    console.log(`Editing ${student.name}`);
-  }
-
-  students = [
-    { name: 'Juan Dela Cruz', course: 'BSIT', year: '2nd Year', isFavorite: false, active: true },
-    { name: 'Maria Santos', course: 'BSIT', year: '3rd Year', isFavorite: false, active: false },
-    { name: 'Pedro Garcia', course: 'BSCS', year: '1st Year', isFavorite: false, active: true },
-    { name: 'Ana Reyes', course: 'BSIS', year: '4th Year', isFavorite: false, active: false }
-  ];
-
-  onToggleActive(student: any): void {
-    student.active = !student.active;
-    console.log(`${student.name} active status:`, student.active);
-  }
-
-  onFavoriteStudent(student: any): void {
-    student.isFavorite = !student.isFavorite;
-    console.log(`${student.name} favorite status:`, student.isFavorite);
-  }
-
-  onDeleteStudent(index: number): void {
-    console.log('Deleting student at index:', index, this.students[index]);
-    this.students.splice(index, 1);
   }
 }

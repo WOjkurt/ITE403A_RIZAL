@@ -1,0 +1,14 @@
+export default `<!doctype html>
+<html lang="en" data-beasties-container="">
+<head>
+  <meta charset="utf-8">
+  <title>UIReplicationActivity</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>body{font-family:Arial,sans-serif;background-color:#f4f4f4;margin:20px}</style><link rel="stylesheet" href="styles-ZFLTIRRA.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-ZFLTIRRA.css"></noscript></head>
+<body ngcm="">
+  <app-root></app-root>
+<script src="main-WXEEQ4CX.js" type="module"></script></body>
+</html>
+`;
